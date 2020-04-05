@@ -4,7 +4,6 @@ export default class ToDo {
     this.description = data.description || "Unknown";
     this.completed = data.completed || false;
     this.user = data.user;
-
   }
 
   get Template() {

@@ -3,9 +3,13 @@ import store from "../store.js";
 
 //TODO Create the render function
 function _drawTodos() {
-  let template = ''
   let todos = store.State.todos
+  let template = /*html*/`
+  <p class="m-0 p-1">Total items: ${todos.length}</p>
+  `
+
   todos.forEach(todo => template += todo.Template)
+
   document.getElementById("todos").innerHTML = template
 }
 
