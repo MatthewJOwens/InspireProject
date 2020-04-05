@@ -10,5 +10,9 @@ export default class Weather {
 
     this.city = data.name
     this.kelvin = data.main.temp
+    this.celcius = Math.floor(this.kelvin - 273)
+    this.farenheit = Math.floor((this.celcius * 1.8) + 32)
+    // this.icon = data.weather["0"].icon ? data.weather["0"].icon : '04d'
+    // this.weather = data.weather.forEach(info =>)
   }
 }

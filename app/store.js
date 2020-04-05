@@ -4,7 +4,7 @@ import Quote from "./models/quote.js";
 
 let _state = {
   /**@type {Weather} */
-  weather: new Weather({ name: "loading", main: { temp: 0.0 } }), //temporary fake data
+  weather: new Weather({ name: "loading", main: { temp: 0.0 }/*, icon: [{ icon: "04d" }]*/ }), //temporary fake data
   /**@type {ToDo[]}*/
   todos: [], //TODO change 'any' to your todo model
   img: [],

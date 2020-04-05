@@ -23,10 +23,12 @@
 	<div>
 		A Todo List
 		<div id="todo-error"></div>
-		<form class="form-row" onsubmit="app.todoController.addTodo(event)">
-			<div class="form-group">
+		<form class="" onsubmit="app.todoController.addTodo(event)">
+			<div class="input-group">
 				<input type="text" name="description" class="form-control" placeholder="New Task">
-				<button type="submit" class="btn btn-primary m-1 p-0"><i class="fas fa-plus"></i></button>
+				<div class="input-group-append">
+					<i class="fas fa-plus m-auto px-2"></i>
+				</div>
 			</div>
 		</form>
 		<div id="todos"></div>

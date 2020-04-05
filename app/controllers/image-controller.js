@@ -6,7 +6,8 @@ import store from "../store.js"
 
 function _drawImg() {
   let img = store.State.img.toString()
-  document.getElementById("bg-image").style.backgroundImage = "url(" + img + ")"
+  document.getElementById("bg-image").style.backgroundImage = "url(" + img + ")";
+  document.getElementById("bg-image").style.backgroundSize = "cover"
 }
 
 export default class ImageController {

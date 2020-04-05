@@ -6,7 +6,12 @@ import store from "../store.js";
 
 //TODO Complete rendering data to the screen
 function drawWeather() {
-  console.log("THE WEATHER MAN SAYS:", store.State.weather);
+  let weather = store.State.weather
+  console.log("THE WEATHER MAN SAYS:", weather)
+  document.getElementById("weather").innerHTML = /*html*/ `
+  <p>${weather.farenheit}&#176F in ${weather.city}</p>
+  `
+  // < img src = "http://openweathermap.org/img/w/${weather.icon}.png" alt = "Weather Icon" >
 }
 export default class WeatherController {
   constructor() {
