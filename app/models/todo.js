@@ -14,7 +14,7 @@ export default class ToDo {
     if (this.completed) {
       template += /*html*/`
           <label class="form-check-label">
-            <input onclick="app.todoController.toggleTodoStatus('${this._id}')" class="form-check-input" type="checkbox" name="checkbox" id="${this._id}" checked> ${this.description}
+            <input onclick="app.todoController.toggleTodoStatus('${this._id}')" class="form-check-input" type="checkbox" name="checkbox" id="${this._id}" checked> <strike>${this.description}</strike>
           </label>`
     } else {
       template += /*html*/`

@@ -12,27 +12,27 @@
 </head>
 
 <body id="bg-image">
-	<div id="weather">
+	<div class="text-white rounded px-2" id="weather">
 		Your Weather Template
 	</div>
 
-	<div id="quote">
+	<div class="text-white rounded px-2" id="quote">
 		The Quote
 	</div>
 
-	<div>
+	<div class="text-white rounded px-2 todolist">
 		A Todo List
-		<div id="todo-error"></div>
 		<form class="" onsubmit="app.todoController.addTodo(event)">
 			<div class="input-group">
 				<input type="text" name="description" class="form-control" placeholder="New Task">
 				<div class="input-group-append">
-					<i class="fas fa-plus m-auto px-2"></i>
+					<button type="submit" class="btn btn-outline-light"><i class="fas fa-plus m-auto"></i></button>
 				</div>
 			</div>
 		</form>
 		<div id="todos"></div>
 	</div>
+
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>

@@ -7,7 +7,7 @@ function _drawQuote() {
   let quote = store.State.quote
   let template = /*html*/`
   <p>${quote.body}</p>
-  <p>${quote.author}</p>
+  <p>-${quote.author}</p>
   `
   document.getElementById("quote").innerHTML = template
 

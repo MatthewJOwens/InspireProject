@@ -1,4 +1,16 @@
-#todo-error{
-  color: red;
-  font-size: 2em;
+.todolist {
+  background-color: #69696969;
+  position: relative;
+  /* min-width: 20em; */
+  max-width: fit-content;
+}
+
+#quote {
+  background-color: #69696969;
+  max-width: 70%;
+}
+
+#weather {
+  background-color: #69696969;
+  max-width: fit-content;
 }
