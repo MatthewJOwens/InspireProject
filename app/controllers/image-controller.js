@@ -16,4 +16,7 @@ export default class ImageController {
     ImageService.getImg();
   }
 
+  getImg() {
+    ImageService.getImg()
+  }
 }
